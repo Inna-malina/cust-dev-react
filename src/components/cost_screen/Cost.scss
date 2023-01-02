@@ -1,0 +1,33 @@
+@import '../../index.scss';
+
+.photo-cost__container {
+    max-width: 1600px;
+    margin: 0px auto;
+    padding: 80px 0px 200px 0px;
+
+    .title-photo-cost {
+        margin: 0px auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 124.41%;
+        color: #000000;
+    }
+
+    .photo__box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 75px 0px 0px 0px;
+
+        .photo {
+            display: block;
+            width: 24%;
+            height: 250px;
+            object-fit: cover;
+
+        }
+    }
+}

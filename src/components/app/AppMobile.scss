@@ -1,0 +1,112 @@
+@import '../../index.scss';
+
+@media (max-width: 889px) {
+    nav {
+        position: absolute;
+        display: none;
+        width: 45%;
+        height: 100vh;
+        right: 0px;
+        background: rgba(24, 96, 191, 0.8);
+        z-index: 1000;
+
+        .nav__box {
+            font-size: 20px;
+            display: block;
+
+            .nav__list {
+                display: block;
+
+
+                .nav__list-item:not(:last-child) {
+                    margin: 0px;
+                }
+
+                .nav__list-item {
+
+                    padding: 0px 0px 25px 0px;
+                }
+
+                .nav__list-item:before {
+                    content: "";
+                    width: 0px;
+                    height: 2px;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    bottom: 15px;
+                    right: 0;
+                    transition: width 0.3s ease;
+                }
+
+                .nav__list-item:hover:before {
+                    width: 60%;
+                    left: 0;
+                }
+            }
+
+            .nav__button {
+                cursor: pointer;
+                outline: none;
+                width: 70%;
+                padding: 14px;
+                border-radius: 50px;
+                border: none;
+                color: $color-title;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+
+                a {
+                    color: $color-title;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .mobile-close:before {
+            display: block;
+            position: absolute;
+            content: "\2716";
+            font-size: 36px;
+            right: 30px;
+            color: #FFFFFF;
+            width: 50px;
+            height: 50px;
+            z-index: 1001;
+
+        }
+    }
+
+    .mobile-menu:before {
+        display: block;
+        position: absolute;
+        content: "\2630";
+        font-size: 55px;
+        right: 60px;
+        color: #FFFFFF;
+        z-index: 1000;
+    }
+
+    .footer-top__box {
+        display: none;
+    }
+}
+
+@media (max-width: 789px) {
+    nav {
+        width: 60%;
+    }
+}
+
+@media (max-width: 578px) {
+    nav {
+        width: 80%;
+    }
+}
+
+@media (max-width: 420px) {
+    nav {
+        width: 100%;
+    }
+}

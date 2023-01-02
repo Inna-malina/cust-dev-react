@@ -1,0 +1,128 @@
+@import '../../index.scss';
+
+@media (max-width: 1100px) {
+    .description-about__container {
+        position: relative;
+        width: 830px;
+        box-sizing: border-box;
+
+        .title-about {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:889px) {
+    .description-about__container {
+        width: 718px;
+
+        .title-about {
+            text-align: center;
+        }
+
+    }
+}
+
+
+
+@media (max-width:750px) {
+    .description-about__container {
+        width: 630px;
+
+        .cards-about__container {
+            display: flex;
+            box-sizing: border-box;
+
+
+
+            .card-about__box:not(:last-child) {
+                margin: 0px 24px 0px 0px;
+            }
+        }
+
+    }
+}
+
+@media (max-width:660px) {
+    .description-about__container {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+
+        .title-about {
+            font-size: $font-size-max;
+            font-weight: $weight-max;
+            margin: 0px;
+            padding: 0px 0px 100px 0px;
+            line-height: 124.41%;
+        }
+
+        .cards-about__container {
+            display: flex;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 0px 20px;
+
+            .card-about__box {
+                width: 45%;
+            }
+        }
+
+    }
+}
+
+@media (max-width:560px) {
+
+    .main__about {
+        height: 665px;
+
+        .about__img {
+            position: absolute;
+            right: 0;
+            top: 95px;
+            max-width: 1405px;
+        }
+
+
+    }
+
+    .description-about__container {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+
+        .title-about {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0px;
+            padding: 0px 0px 39px 0px;
+            line-height: 124.41%;
+        }
+
+        .cards-about__container {
+
+
+            .card-about__box {
+                width: 224px;
+
+                .title__card-about {
+                    font-size: 12px;
+
+                }
+
+                .text__card-about {
+                    font-size: 12px;
+
+                }
+            }
+
+            .card-about__box:not(:last-child) {
+                margin: 0px 50px 0px 0px;
+            }
+
+        }
+
+    }
+
+}

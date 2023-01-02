@@ -1,0 +1,73 @@
+@import '../../index.scss';
+
+@media(max-width: 1360px) {
+    .photo-cost__container {
+        .photo__box {
+            .photo {
+                width: 23%;
+                height: 201px;
+            }
+        }
+    }
+}
+
+@media(max-width: 980px) {
+    .photo-cost__container {
+        padding: 80px 0px 82px 0px;
+    }
+
+    .photo-cost__container {
+        .photo__box {
+            .photo {
+                width: 22%;
+                height: 141px;
+            }
+        }
+    }
+}
+
+@media(max-width: 720px) {
+    .photo-cost__container {
+        padding: 80px 0px 82px 0px;
+    }
+
+    .photo-cost__container {
+        .photo__box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 51px 0px 0px 0px;
+
+            .photo {
+                width: 48%;
+                height: 178px;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .photo-cost__container {
+        padding: 80px 0px 82px 0px;
+    }
+
+    .photo-cost__container {
+        .photo__box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 51px 0px 0px 0px;
+
+            .photo {
+                width: 65%;
+                height: 208px;
+
+            }
+        }
+    }
+}

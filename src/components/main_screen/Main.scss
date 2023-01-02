@@ -1,0 +1,174 @@
+@import '../../index.scss';
+
+.main__bunner {
+    position: relative;
+    max-width: 1600px;
+    margin: 0px auto;
+    height: 718px;
+    background: #ffffff;
+    overflow: hidden;
+
+    .bunner__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 1405px;
+        transform: translate(0px, 0px);
+        opacity: 1;
+
+    }
+
+    .bunner__img:nth-child(1) {
+        animation: bunner 0.5s cubic-bezier(.37, .23, .48, 1.05) 0.5s 1 both;
+        -webkit-animation: bunner 0.5s cubic-bezier(.37, .23, .48, 1.05) 0.5s 1 both;
+    }
+
+    .bunner__img:nth-child(2) {
+        animation: bunner 0.5s cubic-bezier(.37, .23, .48, 1.05) 1s 1 both;
+        -webkit-animation: bunner 0.5s cubic-bezier(.37, .23, .48, 1.05) 1s 1 both;
+    }
+
+    .bunner__img:nth-child(3) {
+        animation: bunner 0.5s cubic-bezier(.37, .23, .48, 1.05) 1.5s 1 both;
+        -webkit-animation: bunner 0.5s cubic-bezier(.37, .23, .48, 1.05) 1.5s 1 both;
+    }
+
+    .circle-bunner__move {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 100;
+        width: 231px;
+        height: 231px;
+        background: radial-gradient(68.31% 68.31% at 50% 50%, #F9FBFF 0%, #CADEF9 100%), #FFFFFF;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        bottom: 0px;
+        left: 300px;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        animation: circle-bunner 1.5s cubic-bezier(.37, .23, .48, 1.05) 2s 1 both;
+        -webkit-animation: circle-bunner 1.5s cubic-bezier(.37, .23, .48, 1.05) 2s 1 both;
+
+        .circle-description__box {
+            text-align: center;
+            color: #2F80ED;
+
+            .circle-text {
+                margin: 0px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .circle-text:not(:last-child) {
+                margin: 0px 0px 10px 0px;
+            }
+
+            .title__circle {}
+        }
+
+    }
+}
+
+@keyframes bunner {
+    from {
+        transform: translate(100%, 0px);
+        opacity: 0;
+        -webkit-transform: translate(100%, 0px);
+        -moz-transform: translate(100%, 0px);
+        -ms-transform: translate(100%, 0px);
+        -o-transform: translate(100%, 0px);
+    }
+}
+
+@keyframes circle-bunner {
+    from {
+        left: -500px;
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+}
+
+.bunner__titles {
+    position: absolute;
+    z-index: 10;
+    top: 21%;
+    right: 17%;
+    color: #FFFFFF;
+    transform: scale(1);
+    animation: title 0.5s cubic-bezier(.37, .23, .46, 1.34) 2s 1 both;
+    -webkit-animation: title 0.5s cubic-bezier(.37, .23, .46, 1.34) 2s 1 both;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+
+}
+
+.bunner__title-data {
+    font-size: $font-size-min;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+}
+
+.bunner__title-main {
+    font-size: 40px;
+    font-weight: $weight-max;
+}
+
+.bunner__title-course {
+    font-size: 18px;
+    font-weight: $weight-min;
+}
+
+.bunner__titles>*:not(:last-child) {
+    margin: 0px 0px 18px 0px;
+}
+
+.bunner__button {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 192px;
+    background: #64E2CD;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    outline: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: 0 0px 28px rgba(100, 226, 205, 0), 0 0px 28px rgba(100, 226, 205, 0);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+
+}
+
+.bunner__button:hover {
+    box-shadow: 0 0px 28px rgba(100, 226, 205, 1), 0 0px 28px rgba(100, 226, 205, 1);
+
+}
+
+@keyframes title {
+    from {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+}

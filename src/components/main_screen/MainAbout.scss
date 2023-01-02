@@ -1,0 +1,100 @@
+@import '../../index.scss';
+
+.main__about {
+    position: relative;
+    z-index: -10;
+    max-width: 1600px;
+    margin: 0px auto;
+    height: 718px;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .about__img {
+        position: absolute;
+        right: 0;
+        top: 95px;
+        max-width: 1405px;
+    }
+
+
+}
+
+.description-about__container {
+    position: relative;
+    width: 830px;
+    box-sizing: border-box;
+
+    .title-about {
+        font-size: $font-size-max;
+        font-weight: $weight-max;
+        margin: 0px;
+        padding: 0px 0px 100px 0px;
+        line-height: 124.41%;
+    }
+
+    .cards-about__container {
+        display: flex;
+        box-sizing: border-box;
+
+        .card-about__box {
+            width: 224px;
+            box-sizing: border-box;
+
+            .title__card-about {
+                font-weight: $weight-medium;
+                font-size: $font-size-min;
+                line-height: 143.55%;
+                letter-spacing: 0.05em;
+                color: #2F80ED;
+            }
+
+            .text__card-about {
+                font-weight: $weight-min;
+                font-size: $font-size-min;
+                line-height: 143.55%;
+                color: #636363;
+            }
+        }
+
+        .card-about__box:not(:last-child) {
+            margin: 0px 75px 0px 0px;
+        }
+
+    }
+
+}
+
+.circle-about__move {
+    border-radius: 50%;
+    position: absolute;
+    width: 231px;
+    height: 246.78px;
+    left: 1180.5px;
+    top: 50px;
+    background: radial-gradient(68.31%68.31% at 50% 50%, #FFFFFF 0%, #CADEF9 100%), #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(119, 157, 255, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    filter: blur(20px);
+    animation: circle-about 3s ease-in-out infinite;
+    -webkit-animation: circle-about 3s ease-in-out infinite alternate;
+}
+
+@keyframes circle-about {
+    from {
+        box-shadow: 0px 10px 50px rgba(119, 157, 255, 0.0);
+        animation-timing-function: ease;
+    }
+
+
+    to {
+        box-shadow: 0px 10px 50px rgba(119, 157, 255, 1);
+    }
+
+}

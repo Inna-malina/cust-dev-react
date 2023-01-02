@@ -1,0 +1,20 @@
+@import '../../index.scss';
+
+@media(max-width: 1195px) {
+    .cost__container {
+        .prise__container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 75px 0px 0px 0px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .cost-card__box {
+                width: 295px;
+                height: 293px;
+
+            }
+        }
+    }
+}

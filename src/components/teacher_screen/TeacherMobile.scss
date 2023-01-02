@@ -1,0 +1,156 @@
+@import '../../index.scss';
+
+@media (max-width: 1290px) {
+    .main__teacher {
+        padding: 112px 0px 130px 0px;
+
+        .title-teacher {
+            margin: 0px;
+            text-align: center;
+            padding: 0px 0px 80px 0px;
+
+        }
+    }
+
+    .video-teacher__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 80px 0px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .main__teacher {
+        padding: 112px 0px 130px 0px;
+
+        .title-teacher {
+            margin: 0px;
+            text-align: center;
+            padding: 0px 0px 80px 0px;
+
+        }
+    }
+
+    .video-teacher__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 80px 0px;
+        flex-wrap: wrap;
+    }
+
+    .video-teacher__box {
+        position: relative;
+
+        video {
+            width: 100%;
+            height: 348px;
+        }
+
+        .video-button {
+            cursor: pointer;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 81%;
+            right: 2%;
+        }
+
+    }
+}
+
+@media (max-width: 650px) {
+
+    .video-teacher__box {
+        .video-button {
+            top: 78%;
+            right: 2%;
+        }
+
+    }
+}
+
+@media (max-width: 650px) {
+
+    .video-teacher__box {
+        .video-button {
+            top: 74%;
+            right: 2%;
+        }
+
+    }
+}
+
+@media (max-width: 570px) {
+
+    .video-teacher__box {
+        .video-button {
+            top: 70%;
+            right: 3%;
+        }
+
+    }
+}
+
+@media (max-width: 508px) {
+    .main__teacher {
+        padding: 70px 0px 130px 0px;
+
+        .title-teacher {
+
+            padding: 0px 0px 19px 0px;
+        }
+    }
+
+    .video-teacher__box {
+        .video-button {
+            top: 65%;
+            right: 4%;
+        }
+
+    }
+}
+
+@media (max-width: 435px) {
+    .main__teacher {
+        padding: 65px 0px 130px 0px;
+
+        .title-teacher {
+            padding: 0px 0px 19px 0px;
+        }
+    }
+
+    .video-teacher__box {
+        .video-button {
+            top: 60%;
+            right: 5%;
+        }
+
+    }
+}
+
+@media (max-width: 435px) {
+    .main__teacher {
+        padding: 65px 0px 130px 0px;
+
+        .title-teacher {
+            padding: 0px 0px 19px 0px;
+        }
+    }
+
+    .video-teacher__box {
+        video {
+            width: 100%;
+            height: 255px;
+        }
+
+        .video-button {
+            top: 55%;
+            right: 5%;
+        }
+
+    }
+}

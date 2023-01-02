@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+.nav-color__rect {
+    height: 140px;
+    width: 100%;
+    background: #2F80ED;
+}
+
+.center__container {
+    width: 65%;
+    margin: 0px auto;
+
+}
+
+.main__programm {
+    padding: 70px 0px 115px 0px;
+
+    .title-programm {
+
+        font-weight: $weight-max;
+        font-size: $font-size-max;
+    }
+
+    .description-programm__container {
+        width: 580px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 25px;
+        column-gap: 31px;
+
+        .card-programm__box {
+            width: 230px;
+
+            .title-card {
+                font-weight: $weight-medium;
+                font-size: $font-size-medium;
+                color: $color-title;
+                text-transform: uppercase;
+            }
+
+            .text-card {
+                font-weight: 400;
+                font-size: $font-size-medium;
+                color: $color-text;
+            }
+        }
+    }
+}
+
+.link-programm {
+    display: block;
+    font-weight: $weight-medium;
+    font-size: $font-size-min;
+    line-height: 143.55%;
+    text-transform: uppercase;
+    text-decoration: dotted;
+    color: $color-title;
+    margin: 65px 0px 20px 0px;
+}

@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.center {
+  width: 80%;
+  margin: 0px auto;
+}
+
+ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+$font-size-min: 14px;
+$font-size-medium: 16px;
+$font-size-max: 30px;
+
+$weight-min: 400;
+$weight-medium: 600;
+$weight-max: 700;
+
+$color-title: #2F80ED;
+$color-text: #636363;

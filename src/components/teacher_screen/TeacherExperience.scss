@@ -1,0 +1,33 @@
+@import '../../index.scss';
+
+.teacher-experience__container {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+
+    .card-experience__box {
+        width: 20%;
+
+        img {
+            display: block;
+            width: 60px;
+            height: 60px;
+        }
+
+        .title-card {
+            font-weight: $weight-medium;
+            font-size: $font-size-medium;
+            line-height: 143.55%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2F80ED;
+        }
+
+        .text-card {
+            font-weight: $weight-min;
+            font-size: $font-size-medium;
+            line-height: 143.55%;
+            color: #636363;
+        }
+    }
+}

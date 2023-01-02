@@ -1,0 +1,67 @@
+@import '../../index.scss';
+
+@media (max-width: 1500px) {
+    .center__container {
+        width: 75%;
+        margin: 0px auto;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .center__container {
+        width: 92%;
+        margin: 0px auto;
+
+    }
+
+    .nav-color__rect {
+        height: 140px;
+        width: 100%;
+        background: #2F80ED;
+    }
+
+    .main__programm {
+        padding: 70px 0px 20px 0px;
+
+
+        .description-programm__container {
+            width: 100%;
+
+            .card-programm__box {
+                width: 313px;
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 712px) {
+    .main__programm {
+        padding: 70px 0px 20px 0px;
+
+        .title-programm {
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .description-programm__container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            .card-programm__box {
+                width: 313px;
+
+            }
+        }
+    }
+
+    .link-programm {
+        text-align: center;
+    }
+}

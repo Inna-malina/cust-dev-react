@@ -1,0 +1,95 @@
+@import '../../index.scss';
+
+
+.main__teacher {
+    padding: 112px 0px 130px 0px;
+
+    .title-teacher {
+        margin: 0px;
+        padding: 0px 0px 80px 0px;
+        font-weight: $weight-max;
+        font-size: $font-size-max;
+    }
+}
+
+
+
+.video-teacher__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 80px 0px;
+}
+
+.visible {
+    display: visible;
+}
+
+.hover {
+    display: none;
+}
+
+.video-teacher__box {
+    position: relative;
+
+    video {
+        width: 645px;
+        height: 348px;
+    }
+
+    .video-button {
+        cursor: pointer;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 81%;
+        right: 2%;
+    }
+
+}
+
+
+.card-teacher__box {
+    width: 300px;
+    height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 100px rgba(47, 55, 237, 0.1);
+    border-radius: 10px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    animation: name 0.4s cubic-bezier(.36, .47, .4, 1.57) 1s both;
+    -webkit-animation: name 0.4s cubic-bezier(.36, .47, .4, 1.57) 1s both;
+
+    .title-card {
+        margin: 0px;
+        font-weight: $weight-max;
+        font-size: 24px;
+        line-height: 44px;
+        color: #2F80ED;
+    }
+
+    .text-card {
+        font-weight: $weight-min;
+        font-size: $font-size-medium;
+        line-height: 29px;
+        color: #636363;
+    }
+
+
+}
+
+@keyframes name {
+    from {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+}
